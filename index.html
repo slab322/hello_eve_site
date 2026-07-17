@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<title>株式会社H.E. | 地域をつなぐ</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:sans-serif;
+    line-height:1.8;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+header{
+    background:#fff;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.site-logo{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:28px;
+    height:3px;
+    background:#333;
+    border-radius:3px;
+}
+.header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 20px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+}
+
+.hero{
+    background:#f5f5f5;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.placeholder{
+    border:2px dashed #bbb;
+    background:#fafafa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#777;
+    margin-bottom:20px;
+}
+
+.hero-image{
+    height:500px;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.about-image{
+    height:500px;
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.service-image{
+    height:250px;
+}
+
+.gallery-image{
+    height:250px;
+}
+
+.rep-image{
+    height:500px;
+}
+
+.result-image{
+    height:400px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    border:1px solid #ddd;
+    padding:20px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    text-align:center;
+}
+
+.stat{
+    border:1px solid #ddd;
+    padding:20px;
+}
+
+.sponsors{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.logo{
+    height:120px;
+}
+
+.community{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.message{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+}
+
+.reason{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.reason-box{
+    border:1px solid #ddd;
+    padding:30px;
+    text-align:center;
+}
+
+.company-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.company-table th,
+.company-table td{
+    border:1px solid #ddd;
+    padding:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+@media(max-width:900px){
+
+.services,
+.stats,
+.sponsors,
+.community,
+.reason,
+.message{
+    grid-template-columns:1fr;
+}
+
+.hamburger{
+    display:flex;
+}
+
+nav{
+    display:none;
+}
+
+nav.active{
+    display:block;
+    position:absolute;
+    top:90px;
+    left:0;
+    width:100%;
+    background:white;
+    border-top:1px solid #ddd;
+}
+
+nav.active ul{
+    flex-direction:column;
+    padding:20px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="logo-area">
+            <img src="images/logo.png" alt="ロゴ" class="site-logo">
+            <h1>株式会社H.E.</h1>
+        </div>
+    
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#services">活動内容</a></li>
+                <li><a href="#results">活動実績</a></li>
+                <li><a href="#sponsors">スポンサー様</a></li>
+                <li><a href="#community">地域活動</a></li>
+                <li><a href="#message">代表挨拶</a></li>
+                <li><a href="#company">会社概要</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    
+    </div>
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+    <div class="hero-image">
+        <img src="images/main.jpg" alt="メインビジュアル">
+    </div>
+
+<h2 class="hero-title">
+    Hello everyone!<br>
+    〜地域をつなぐ、人をつなぐ〜
+</h2>
+
+<p>
+スタートアップ応援・地域イベント・企業PR・地域活性化活動・ボランティア活動
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>私たちについて</h2>
+
+<div class="about-image">
+    <img src="images/watashitachi.png" alt="私たちについて">
+</div>
+
+<p>
+地域イベント開催や、の魅力を発信し、
+地域全体をつなぐ活動を行っています。
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>活動内容</h2>
+
+<div class="services">
+
+<div class="card">
+<div class="placeholder service-image">
+ここ写真（600px × 400px）
+</div>
+<h3>地域イベント企画運営</h3>
+<p>毎月イベント開催を行なっております。SNSにて随時情報発信中</p>
+</div>
+
+<div class="card">
+<div class="placeholder service-image">
+ここ写真（600px × 400px）
+</div>
+<h3>企業プロモーション支援</h3>
+<p>地域企業様の活動ご紹介を行なっております。</p>
+</div>
+
+<div class="card">
+<div class="placeholder service-image">
+ここ写真（600px × 400px）
+</div>
+<h3>地域情報発信</h3>
+<p>弊社イベント以外の地域情報も発信中。</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>活動実績</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3>120回</h3>
+<p>開催イベント数</p>
+</div>
+
+<div class="stat">
+<h3>25,000人</h3>
+<p>来場者数</p>
+</div>
+
+<div class="stat">
+<h3>80社</h3>
+<p>協賛企業数</p>
+</div>
+
+<div class="stat">
+<h3>150回</h3>
+<p>地域活動実績</p>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="placeholder result-image">
+ここ写真（1200px × 600px）
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>スポンサー企業紹介</h2>
+
+<div class="sponsors">
+
+<div class="placeholder logo">
+ロゴ（300px × 150px）
+</div>
+
+<div class="placeholder logo">
+ロゴ（300px × 150px）
+</div>
+
+<div class="placeholder logo">
+ロゴ（300px × 150px）
+</div>
+
+<div class="placeholder logo">
+ロゴ（300px × 150px）
+</div>
+
+<div class="placeholder logo">
+ロゴ（300px × 150px）
+</div>
+
+<div class="placeholder logo">
+ロゴ（300px × 150px）
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>地域活動・ボランティア</h2>
+
+<div class="community">
+
+<div>
+<div class="placeholder gallery-image">
+500px × 350px
+</div>
+<p>地域清掃活動</p>
+</div>
+
+<div>
+<div class="placeholder gallery-image">
+500px × 350px
+</div>
+<p>子ども向けイベント</p>
+</div>
+
+<div>
+<div class="placeholder gallery-image">
+500px × 350px
+</div>
+<p>高齢者支援活動</p>
+</div>
+
+<div>
+<div class="placeholder gallery-image">
+500px × 350px
+</div>
+<p>地域交流活動</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="message">
+
+<div class="placeholder rep-image">
+代表写真（500px × 600px）
+</div>
+
+<div>
+
+<h2>代表挨拶</h2>
+
+<p>
+　地域には素晴らしい企業、人、活動が数多く存在し、まだまだ多くの可能性があります。
+しかし、それぞれが魅力を持っているにもかかわらず、出会う機会や知る機会が少ないことで、多くの可能性が埋もれてしまっていると日々のイベント活動を通じて感じています。
+私たちはイベントの企画・運営を通じて、人と人、企業と地域、想いと想いをつなぐきっかけを創りたいと考えています。
+イベントは単なる催しではありません。
+新しい出会いが生まれ、地域の魅力が再発見され、企業の活動が地域に伝わる場でもあります。
+一つひとつのイベントや活動を通じて、地域に関わる皆さまが笑顔になり、地域全体が少しずつ活性化していく。その積み重ねが、より良い未来につながると信じています。
+これからも地域に根差し、多くの方々と協力しながら、人と地域をつなぐ活動に取り組んでまいります。
+今後ともどうぞよろしくお願いいたします。
+代表　末留
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>選ばれる理由</h2>
+
+<div class="reason">
+
+<div class="reason-box">
+<h3>地域密着</h3>
+<p>地域とのつながりを大切にした活動</p>
+</div>
+
+<div class="reason-box">
+<h3>豊富な実績</h3>
+<p>多数のイベント運営実績</p>
+</div>
+
+<div class="reason-box">
+<h3>ネットワーク</h3>
+<p>企業・団体との連携力</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>会社概要</h2>
+
+<table class="company-table">
+
+<tr>
+<th>会社名</th>
+<td>株式会社HE</td>
+</tr>
+
+<tr>
+<th>代表者</th>
+<td>末留 崇充</td>
+</tr>
+
+<tr>
+<th>所在地</th>
+<td>茨城県守谷市野木崎619-5 2階</td>
+</tr>
+
+<tr>
+<th>電話番号</th>
+<td>000-0000-0000</td>
+</tr>
+
+<tr>
+<th>メール</th>
+<td>info@example.com</td>
+</tr>
+
+<tr>
+<th>事業内容</th>
+<td>スタートアップ応援・地域イベント</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>SNS・外部リンク</h2>
+
+<ul>
+<li>Instagram</li>
+<li>地域メディア</li>
+<li>関連団体</li>
+</ul>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="container">
+
+<h2>お問い合わせ</h2>
+
+<p>メール：info@example.com</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p> © 2026 株式会社HE</p>
+
+</footer>
+<script>
+
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+    
+    </script>
+</body>
+</html>
