@@ -10,6 +10,7 @@
   --color-background-sub: #FFF9F4;
   --color-border: #EAEAEA;
   --container-width: 1200px;
+  --partner-content-width: 800px;
   --radius-sm: 6px;
   --radius-md: 12px;
   --section-padding: clamp(56px, 8vw, 96px);
