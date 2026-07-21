@@ -738,6 +738,11 @@ footer {
     flex-wrap: wrap;
   }
 
+  .sns-icon {
+    width: 44px;
+    height: 44px;
+  }
+
   .contact-actions {
     flex-direction: row;
     justify-content: center;
