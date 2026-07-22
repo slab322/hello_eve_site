@@ -52,6 +52,19 @@ a {
   margin: auto;
 }
 
+/* SEO/アクセシビリティ: 視覚的には非表示だが、スクリーンリーダーや検索エンジンには読み上げ・解釈させたい見出し用 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 section {
   padding: var(--section-padding) 0;
 }

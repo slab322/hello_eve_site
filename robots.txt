@@ -1,0 +1,5 @@
+# SEO: 全クローラーにサイト全体のクロールを許可し、sitemap.xmlの場所を明示
+User-agent: *
+Allow: /
+
+Sitemap: https://he-company.com/sitemap.xml
