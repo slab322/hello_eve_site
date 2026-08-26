@@ -411,19 +411,15 @@ nav a:hover {
   background: #fff;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: 24px;
-}
-
-.card .placeholder {
-  height: 200px;
-  margin-bottom: 20px;
+  padding: 32px 24px;
 }
 
 .card-number {
   color: var(--color-primary);
   font-weight: 700;
-  font-size: 1.4rem;
-  margin-bottom: 8px;
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 16px;
 }
 
 .card h3 {
