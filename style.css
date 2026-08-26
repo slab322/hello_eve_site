@@ -469,34 +469,9 @@ nav a:hover {
   border-radius: var(--radius-sm);
 }
 
-.case-meta {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px 16px;
-  font-size: 0.9rem;
-}
-
-.case-meta div {
-  display: flex;
-  flex-direction: column;
-}
-
-.case-meta dt {
-  color: var(--color-text-light);
-  font-size: 0.8rem;
-}
-
-.case-meta dd {
-  font-weight: 600;
-}
-
 .case-role {
   font-size: 0.95rem;
   color: var(--color-text-light);
-}
-
-.case-card .btn {
-  align-self: flex-start;
 }
 
 /* ==========================================================================
