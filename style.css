@@ -348,6 +348,7 @@ nav a:hover {
   font-weight: 500;
   color: var(--color-text);
   margin-left: 4px;
+  white-space: nowrap;
 }
 
 .stat-label {
