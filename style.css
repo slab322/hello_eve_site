@@ -356,9 +356,17 @@ nav a:hover {
   font-size: 0.95rem;
 }
 
-.stats-note {
+.stats-highlight {
   text-align: center;
   margin-top: 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.stats-note {
+  text-align: center;
+  margin-top: 8px;
   font-size: 0.8rem;
   color: var(--color-text-light);
 }
